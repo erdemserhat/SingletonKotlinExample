@@ -6,5 +6,11 @@ fun main(args: Array<String>) {
      * provide logging functionality throughout the application.
      */
 
+    val a=Singleton.getInstance();
+    val b=Singleton.getInstance();
+
+    println(if(a==b) "a and b refers same object.." else "a and b don't refers same object ")
+
+
 }
 

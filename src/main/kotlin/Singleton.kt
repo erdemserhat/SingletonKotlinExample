@@ -1,3 +1,5 @@
+import java.time.Instant
+
 class Singleton private constructor() {
 
     companion object {
@@ -6,14 +8,15 @@ class Singleton private constructor() {
         fun getInstance():Singleton{
            if (instance==null){
                instance=Singleton()
-               return instance as Singleton
            }else{
                return instance as Singleton
            }
 
-    }
+            return instance as Singleton
 
     }
 
-    fun doSomething() = "Doing something"
+    }
+
+
 }
